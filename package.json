@@ -1,1 +1,36 @@
-{\n  \"name\": \"banco-de-milhas\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"dev\": \"next dev\",\n    \"build\": \"prisma generate && next build\",\n    \"start\": \"next start\",\n    \"lint\": \"next lint\",\n    \"postinstall\": \"prisma generate\"\n  },\n  \"dependencies\": {\n    \"@auth/nextjs\": \"latest\",\n    \"@hookform/resolvers\": \"latest\",\n    \"@prisma/client\": \"latest\",\n    \"axios\": \"latest\",\n    \"bcryptjs\": \"latest\",\n    \"class-variance-authority\": \"latest\",\n    \"clsx\": \"latest\",\n    \"next\": \"latest\",\n    \"react\": \"latest\",\n    \"react-dom\": \"latest\",\n    \"react-hook-form\": \"latest\",\n    \"stripe\": \"latest\",\n    \"tailwind-merge\": \"latest\",\n    \"zod\": \"latest\"\n  },\n  \"devDependencies\": {\n    \"@types/bcryptjs\": \"latest\",\n    \"@types/node\": \"latest\",\n    \"@types/react\": \"latest\",\n    \"@types/react-dom\": \"latest\",\n    \"@typescript-eslint/eslint-plugin\": \"latest\",\n    \"@typescript-eslint/parser\": \"latest\",\n    \"autoprefixer\": \"latest\",\n    \"eslint\": \"latest\",\n    \"eslint-config-next\": \"latest\",\n    \"eslint-config-prettier\": \"latest\",\n    \"postcss\": \"latest\",\n    \"prettier\": \"latest\",\n    \"prisma\": \"latest\",\n    \"tailwindcss\": \"latest\",\n    \"typescript\": \"latest\"\n  }\n}
+{
+  "name": "banco-de-milhas",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.344.0",
+    "next": "14.1.0",
+    "next-auth": "^4.24.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "prisma": "^5.10.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
