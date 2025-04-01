@@ -1,1 +1,26 @@
-import type { Metadata } from 'next';\nimport { Inter } from 'next/font/google';\nimport './globals.css';\n\nconst inter = Inter({ subsets: ['latin'] });\n\nexport const metadata: Metadata = {\n  title: 'Banco de Milhas - Sua Plataforma de Negociação',\n  description: 'Plataforma para compra, venda e leilão de milhas aéreas',\n};\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <html lang=\"pt-BR\">\n      <body className={inter.className}>\n        <main className=\"min-h-screen bg-background\">\n          {children}\n        </main>\n      </body>\n    </html>\n  );\n}
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Navbar from '@/components/Navbar';
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: 'Banco de Milhas',
+  description: 'Plataforma de negociação de milhas aéreas',
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="pt-BR">
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+      </body>
+    </html>
+  );
+}
